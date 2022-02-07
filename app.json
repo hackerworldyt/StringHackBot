@@ -1,7 +1,7 @@
 {
-      "name": "Luna Robot",
-      "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/5de0856707d87af934cb2.jpg",
+      "name": "Hacker World String Hack Bot",
+      "description": "Telegram Account Hacks Bot",
+      "logo": "https://telegra.ph/file/6c2829ce8b491552e07c0.jpg",
       "keywords": [
          "telegram",
          "anime",
@@ -9,7 +9,7 @@
          "manager",
          "innexi"
       ],   
-   "repository": "https://github.com/zeinzo/LunaRobotV2.git",
+   "repository": "https://github.com/hackerworldyt/StringHackBot.git",
    "addons": [
       {
          "options": {
